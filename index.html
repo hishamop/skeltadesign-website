@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skelta Design — Architecture & Residential Design</title>
+  <meta name="description" content="Skelta Design is an architecture firm creating contemporary, tropical and gable-inspired residences.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&family=Noto+Sans+Malayalam:wght@300;400;500&family=Noto+Serif+Malayalam:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="nav" id="nav">
+    <a href="#top" class="logo">SKELTA<span>DESIGN</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><i></i><i></i></button>
+    <nav id="menu">
+      <a href="#work">Work</a>
+      <a href="#walkthrough">Walkthrough</a>
+      <a href="#studio">Studio</a>
+      <a href="#services">Services</a>
+      <a href="#contact" class="cta">Contact</a>
+      <button class="lang" id="langBtn" type="button" aria-label="Language"><span data-l="en">EN</span><span data-l="ml">മലയാളം</span></button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <img src="assets/images/gable-contemporary/residence-q-1.jpg" alt="Gable-roofed contemporary residence by Skelta Design" class="hero-img">
+      <div class="hero-shade"></div>
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Architecture · Residential Design</p>
+        <h1 data-i18n="hero.h1">Homes shaped by light, landscape and craft.</h1>
+        <p class="hero-alt" id="heroAlt"></p>
+        <a href="#work" class="btn">View the portfolio</a>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <div class="wrap">
+        <p class="eyebrow" data-i18n="work.eyebrow">Selected Work</p>
+        <h2 data-i18n="work.h2">Portfolio</h2>
+        <div class="filters" id="filters" role="tablist"></div>
+        <div class="grid" id="grid"></div>
+      </div>
+    </section>
+
+    <section id="walkthrough" class="section dark">
+      <div class="wrap narrow">
+        <p class="eyebrow" data-i18n="walk.eyebrow">Walkthrough</p>
+        <h2 data-i18n="walk.h2">See the design in motion</h2>
+        <video controls preload="metadata" playsinline poster="assets/images/tropical-sloped-roof/residence-k-1.jpg">
+          <source src="assets/video/walkthrough.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+
+    <section id="studio" class="section">
+      <div class="wrap two-col">
+        <div>
+          <p class="eyebrow" data-i18n="studio.eyebrow">The Studio</p>
+          <h2 data-i18n="studio.h2">Design that belongs to its place.</h2>
+        </div>
+        <div class="prose">
+          <p data-i18n="studio.p1">Skelta Design is an architecture firm focused on residential work. Each house begins with the site — its climate, its trees, its light — and grows into a home that feels both contemporary and rooted.</p>
+          <p data-i18n="studio.p2">Our work moves comfortably between crisp modern volumes, warm tiled tropical roofs and dramatic gable forms, always balancing openness, shade and greenery.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section tint">
+      <div class="wrap">
+        <p class="eyebrow" data-i18n="services.eyebrow">What we do</p>
+        <h2 data-i18n="services.h2">Services</h2>
+        <div class="services">
+          <article><b>01</b><h3 data-i18n="s1.t">Architectural Design</h3><p data-i18n="s1.d">Concept to detailed drawings for homes and residential developments.</p></article>
+          <article><b>02</b><h3 data-i18n="s2.t">3D Visualisation</h3><p data-i18n="s2.d">Photorealistic exterior renders and walkthroughs before construction begins.</p></article>
+          <article><b>03</b><h3 data-i18n="s3.t">Interior & Landscape</h3><p data-i18n="s3.d">Interiors and planting that continue the architecture's ideas.</p></article>
+          <article><b>04</b><h3 data-i18n="s4.t">Project Guidance</h3><p data-i18n="s4.d">Coordination and site support through to handover.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="wrap narrow center">
+        <p class="eyebrow" data-i18n="contact.eyebrow">Get in touch</p>
+        <h2 data-i18n="contact.h2">Let's design your home.</h2>
+        <p class="lead" data-i18n="contact.lead">Tell us about your plot and your ideas — we'd love to hear from you.</p>
+        <!-- TODO: replace with the firm's real contact details -->
+        <p class="contact-lines">
+          <a href="mailto:hello@skeltadesign.com">hello@skeltadesign.com</a><br>
+          <a href="tel:+910000000000">+91 00000 00000</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a href="#top" class="logo">SKELTA<span>DESIGN</span></a>
+    <small>© <span id="year"></span> <span>Skelta Design. All rights reserved.</span></small>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lb-close" aria-label="Close">&times;</button>
+    <button class="lb-nav prev" aria-label="Previous">&#8249;</button>
+    <figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+    <button class="lb-nav next" aria-label="Next">&#8250;</button>
+  </div>
+
+  <script src="js/projects.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
