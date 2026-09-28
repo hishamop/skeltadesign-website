@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hishamop.github.io/skeltadesign-website/sitemap.xml
