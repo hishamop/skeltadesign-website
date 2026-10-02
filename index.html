@@ -21,7 +21,10 @@
   <meta name="twitter:description" content="Contemporary, tropical and gable-inspired residences designed in Kerala.">
   <meta name="twitter:image" content="https://skeltadesign.com/assets/images/gable-contemporary/residence-q-1.jpg">
 
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/brand/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="assets/brand/favicon-16.png" sizes="16x16" type="image/png">
+  <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+  <link rel="icon" href="assets/brand/icon-512.png" sizes="512x512" type="image/png">
 
   <!-- Structured data: tells Google this is a local architecture firm, for richer search results -->
   <script type="application/ld+json">
@@ -35,7 +38,22 @@
     "email": "hello@skeltadesign.com",
     "telephone": "+910000000000",
     "areaServed": "Kerala, India",
-    "knowsLanguage": ["en", "ml"]
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Thondayad",
+      "addressRegion": "Kerala",
+      "addressCountry": "IN"
+    },
+    "knowsLanguage": ["en", "ml"],
+    "founder": {
+      "@type": "Person",
+      "name": "Hudaifa Kunnekkadan",
+      "jobTitle": "Owner & Principal Architect"
+    },
+    "sameAs": [
+      "https://www.instagram.com/skeltadesignstudio/",
+      "https://www.facebook.com/skelta.ds/"
+    ]
   }
   </script>
   <!-- TODO: update email/telephone in this schema once real contact details are confirmed -->
@@ -47,7 +65,7 @@
 </head>
 <body>
   <header class="nav" id="nav">
-    <a href="#top" class="logo">SKELTA<span>DESIGN</span></a>
+    <a href="#top" class="logo"><img src="assets/brand/logo.png" alt="Skelta Design Studio" width="44" height="44"></a>
     <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><i></i><i></i></button>
     <nav id="menu">
       <a href="#work">Work</a>
@@ -99,6 +117,15 @@
         <div class="prose">
           <p data-i18n="studio.p1">Skelta Design is an architecture firm focused on residential work. Each house begins with the site — its climate, its trees, its light — and grows into a home that feels both contemporary and rooted.</p>
           <p data-i18n="studio.p2">Our work moves comfortably between crisp modern volumes, warm tiled tropical roofs and dramatic gable forms, always balancing openness, shade and greenery.</p>
+          <p class="founder" data-i18n="studio.p3">The studio is led by Hudaifa Kunnekkadan, Owner & Principal Architect.</p>
+          <div class="social">
+            <a href="https://www.instagram.com/skeltadesignstudio/" target="_blank" rel="noopener noreferrer" aria-label="Skelta Design on Instagram">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="https://www.facebook.com/skelta.ds/" target="_blank" rel="noopener noreferrer" aria-label="Skelta Design on Facebook">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M15 4h-2.2C10.1 4 9 5.3 9 7.6V10H7v3h2v7h3v-7h2.3l.4-3H12V7.9c0-.8.3-1.3 1.3-1.3H15z"/></svg>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -126,12 +153,21 @@
           <a href="mailto:hello@skeltadesign.com">hello@skeltadesign.com</a><br>
           <a href="tel:+910000000000">+91 00000 00000</a>
         </p>
+        <p class="location">Thondayad, Kerala, India</p>
       </div>
     </section>
   </main>
 
   <footer>
-    <a href="#top" class="logo">SKELTA<span>DESIGN</span></a>
+    <a href="#top" class="logo"><img src="assets/brand/logo.png" alt="Skelta Design Studio" width="40" height="40"></a>
+    <div class="social footer-social">
+      <a href="https://www.instagram.com/skeltadesignstudio/" target="_blank" rel="noopener noreferrer" aria-label="Skelta Design on Instagram">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="https://www.facebook.com/skelta.ds/" target="_blank" rel="noopener noreferrer" aria-label="Skelta Design on Facebook">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M15 4h-2.2C10.1 4 9 5.3 9 7.6V10H7v3h2v7h3v-7h2.3l.4-3H12V7.9c0-.8.3-1.3 1.3-1.3H15z"/></svg>
+      </a>
+    </div>
     <small>© <span id="year"></span> <span>Skelta Design. All rights reserved.</span></small>
   </footer>
 

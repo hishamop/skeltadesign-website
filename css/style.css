@@ -13,8 +13,6 @@ a{color:inherit;text-decoration:none}
 /* nav */
 .nav{position:fixed;inset:0 0 auto 0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:20px 5vw;color:#fff;transition:background .3s,color .3s,padding .3s}
 .nav.solid{background:rgba(250,248,244,.94);backdrop-filter:blur(8px);color:var(--ink);padding:12px 5vw;box-shadow:0 1px 0 var(--line)}
-.logo{font:600 22px var(--serif);letter-spacing:.22em}
-.logo span{font:400 10px var(--sans);letter-spacing:.35em;margin-left:.6em;color:var(--accent)}
 nav{display:flex;gap:32px;align-items:center;font-size:13px;letter-spacing:.14em;text-transform:uppercase}
 nav a{opacity:.85;transition:opacity .2s}nav a:hover{opacity:1}
 nav .cta{border:1px solid currentColor;padding:8px 20px;opacity:1}
@@ -74,7 +72,7 @@ video{width:100%;background:#000;margin-top:8px}
 .contact-lines{font:500 clamp(22px,3vw,34px)/1.5 var(--serif)}
 .contact-lines a:hover{color:var(--accent)}
 footer{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;padding:30px 5vw;background:var(--dark);color:#aaa}
-footer .logo{color:#fff;font-size:18px}footer small{font-size:12px}
+footer small{font-size:12px}
 
 /* lightbox */
 .lightbox{position:fixed;inset:0;z-index:100;background:rgba(12,12,11,.95);display:flex;align-items:center;justify-content:center;padding:4vw}
@@ -124,3 +122,24 @@ html[lang=ml] .contact-lines{font-family:'Cormorant Garamond',Georgia,serif}
 /* nav, footer and primary links always stay English */
 html[lang=ml] .nav,html[lang=ml] footer,html[lang=ml] .btn{font-family:'Inter',system-ui,sans-serif}
 html[lang=ml] .logo{font-family:'Cormorant Garamond',Georgia,serif}
+
+/* brand logo image (replaces text wordmark) */
+.logo{display:inline-flex;align-items:center}
+.logo img{display:block;border-radius:50%;width:44px;height:44px}
+footer .logo img{width:40px;height:40px}
+.nav.solid .logo img{width:38px;height:38px;transition:width .3s,height .3s}
+
+/* founder credit line */
+.founder{font-size:14px;letter-spacing:.04em;color:var(--ink);margin-top:-.4em}
+.founder b{color:var(--accent)}
+
+/* social icon links (studio section + footer) */
+.social{display:flex;gap:14px;margin-top:18px}
+.social a{color:var(--muted);display:inline-flex;width:38px;height:38px;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:50%;transition:.25s}
+.social a:hover{color:#fff;background:var(--accent);border-color:var(--accent)}
+.footer-social{margin-top:0}
+.footer-social a{color:#aaa;border-color:#3a3836}
+.footer-social a:hover{color:#161616;background:var(--accent);border-color:var(--accent)}
+
+/* contact location line */
+.location{margin-top:10px;color:var(--muted);font-size:14px;letter-spacing:.08em;text-transform:uppercase}
